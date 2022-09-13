@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
 .App {
   height: 100vh;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .container-left {
@@ -12,4 +15,15 @@
 
 .container-right {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.input-title {
+  color: hsl(278, 68%, 11%);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
