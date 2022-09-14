@@ -1,0 +1,12 @@
+.card-front {
+    position: relative;
+}
+
+.card-front-number {
+    position: absolute;
+    bottom: 40px;
+    left: 45px;
+    color: white;
+    font-size: 30px;
+    z-index: 2;
+}
