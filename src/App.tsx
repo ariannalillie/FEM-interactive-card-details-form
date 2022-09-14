@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { CardFront } from "./components/CardFront";
+import { CardBack } from "./components/CardBack";
 import { useState } from "react";
 
 function App() {
@@ -41,6 +42,9 @@ function App() {
           cardHolder={cardHolder}
           cardExpDate={`${cardExpDate1} / ${cardExpDate2}`}
         />
+      </div>
+      <div className="card-back-container">
+        <CardBack cvc="123" />
       </div>
       <div className="container-left"></div>
       <div className="container-right">

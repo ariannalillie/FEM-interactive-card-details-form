@@ -31,7 +31,7 @@
 .card-front-container {
   position: absolute;
   top: 20%;
-  left: 20%;
+  left:15%;
 }
 
 .input-box {
@@ -47,4 +47,8 @@
   border-radius: 7px;
 }
 
-
+.card-back-container {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}

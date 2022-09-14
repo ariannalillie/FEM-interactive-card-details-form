@@ -1,0 +1,10 @@
+.card-back {
+    position: relative;
+}
+
+.cvc {
+    color: white;
+    position: absolute;
+    top: 38%;
+    right: 12%;
+}
