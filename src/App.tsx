@@ -5,9 +5,11 @@ import { CardFront } from "./components/CardFront";
 function App() {
   return (
     <div className="App">
+        <div className="card-front-container">
+          <CardFront />
+        </div>
       <div className="container-left"></div>
       <div className="container-right">
-      <CardFront />
         <form>
           <p className="input-title">Cardholder Name</p>
           <input type="text" placeholder="e.g. Jane Appleseed" />
