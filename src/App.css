@@ -34,3 +34,17 @@
   left: 20%;
 }
 
+.input-box {
+  padding: 10px;
+  border-radius: 7px;
+  margin-right: 10px;
+}
+
+.confirm-button {
+  padding: 10px;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  border-radius: 7px;
+}
+
+
