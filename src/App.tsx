@@ -6,7 +6,8 @@ import { useState } from "react";
 function App() {
   const [cardNumber, setCardNumber] = useState("0000 0000 0000 0000");
   const [cardHolder, setCardHolder] = useState("Jane Appleseed");
-  const [cardExpDate, setCardExpDate] = useState("00/00");
+  const [cardExpDate1, setCardExpDate1] = useState("00");
+  const [cardExpDate2, setCardExpDate2] = useState("00");
 
   const handleCardNumberChange = (
     event: React.ChangeEvent<HTMLInputElement>
@@ -20,13 +21,25 @@ function App() {
     setCardHolder(event.target.value);
   };
 
+  const handleCardExpDate1Change = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setCardExpDate1(event.target.value);
+  };
+
+  const handleCardExpDate2Change = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setCardExpDate2(event.target.value);
+  };
+
   return (
     <div className="App">
       <div className="card-front-container">
         <CardFront
           cardNumber={cardNumber}
           cardHolder={cardHolder}
-          cardExpDate={cardExpDate}
+          cardExpDate={`${cardExpDate1} / ${cardExpDate2}`}
         />
       </div>
       <div className="container-left"></div>
@@ -47,8 +60,18 @@ function App() {
             onChange={(e) => handleCardNumberChange(e)}
           />
           <p className="input-title">Exp. Date (MM/YY)</p>
-          <input className="input-box" type="text" placeholder="MM" />
-          <input className="input-box" type="text" placeholder="YY" />
+          <input
+            className="input-box"
+            type="text"
+            placeholder="MM"
+            onChange={(e) => handleCardExpDate1Change(e)}
+          />
+          <input
+            className="input-box"
+            type="text"
+            placeholder="YY"
+            onChange={(e) => handleCardExpDate2Change(e)}
+          />
           <p className="input-title">CVC</p>
           <input className="input-box" type="number" placeholder="e.g. 123" />
           <button className="confirm-button" type="submit">
