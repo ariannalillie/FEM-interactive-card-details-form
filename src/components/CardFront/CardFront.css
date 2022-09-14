@@ -10,3 +10,13 @@
     font-size: 30px;
     z-index: 2;
 }
+
+.card-front-name {
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 5px;
+    left: 45px;
+    color: white;
+    font-size: 15px;
+    z-index: 2;
+}
