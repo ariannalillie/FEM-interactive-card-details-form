@@ -9,6 +9,7 @@ function App() {
   const [cardHolder, setCardHolder] = useState("Jane Appleseed");
   const [cardExpDate1, setCardExpDate1] = useState("00");
   const [cardExpDate2, setCardExpDate2] = useState("00");
+  const [cardCvc, setCardCvc] = useState("000");
 
   const handleCardNumberChange = (
     event: React.ChangeEvent<HTMLInputElement>
@@ -44,7 +45,7 @@ function App() {
         />
       </div>
       <div className="card-back-container">
-        <CardBack cvc="123" />
+        <CardBack cvc={cardCvc} />
       </div>
       <div className="container-left"></div>
       <div className="container-right">
