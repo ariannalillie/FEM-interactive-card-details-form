@@ -35,6 +35,10 @@ function App() {
     setCardExpDate2(event.target.value);
   };
 
+  const handleCardCvcChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCardCvc(event.target.value);
+  };
+
   return (
     <div className="App">
       <div className="card-front-container">
