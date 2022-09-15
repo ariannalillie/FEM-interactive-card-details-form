@@ -78,7 +78,7 @@ function App() {
             onChange={(e) => handleCardExpDate2Change(e)}
           />
           <p className="input-title">CVC</p>
-          <input className="input-box" type="number" placeholder="e.g. 123" />
+          <input className="input-box" type="number" placeholder="e.g. 123" onChange={(e) => handleCardCvcChange(e)}/>
           <button className="confirm-button" type="submit">
             Confirm
           </button>
