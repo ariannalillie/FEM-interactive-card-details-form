@@ -19,6 +19,7 @@ function App() {
     setCardNumber(event.target.value);
   };
 
+  // Handle card holder input
   const handleCardHolderChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
