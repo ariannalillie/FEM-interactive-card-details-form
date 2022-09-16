@@ -33,6 +33,7 @@ function App() {
     setCardExpDate1(event.target.value);
   };
 
+  // Handle card expiration date input
   const handleCardExpDate2Change = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
