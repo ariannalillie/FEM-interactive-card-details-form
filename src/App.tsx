@@ -40,6 +40,7 @@ function App() {
     setCardExpDate2(event.target.value);
   };
 
+  // Handle card CVC input
   const handleCardCvcChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCardCvc(event.target.value);
   };
