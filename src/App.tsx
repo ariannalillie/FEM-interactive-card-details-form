@@ -11,6 +11,8 @@ function App() {
   const [cardExpDate2, setCardExpDate2] = useState("00");
   const [cardCvc, setCardCvc] = useState("000");
 
+
+  // Handle card number input
   const handleCardNumberChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
