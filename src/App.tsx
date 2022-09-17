@@ -5,6 +5,7 @@ import { CardBack } from "./components/CardBack";
 import { useState } from "react";
 
 function App() {
+  // State variables
   const [cardNumber, setCardNumber] = useState("0000 0000 0000 0000");
   const [cardHolder, setCardHolder] = useState("Jane Appleseed");
   const [cardExpDate1, setCardExpDate1] = useState("00");
