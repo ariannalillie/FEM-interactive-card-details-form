@@ -60,6 +60,7 @@ function App() {
       </div>
       <div className="container-left"></div>
       <div className="container-right">
+        {/* Form  */}
         <form>
           <p className="input-title">Cardholder Name</p>
           <input
