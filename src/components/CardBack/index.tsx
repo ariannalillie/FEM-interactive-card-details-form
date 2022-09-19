@@ -2,6 +2,7 @@ import cardBackImage from "../../images/bg-card-back.png";
 import "./CardBack.css";
 import { FC } from "react";
 
+// CardBackProps interface
 export interface CardBackProps {
   cvc: string;
 }
