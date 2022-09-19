@@ -2,6 +2,7 @@ import "./CardFront.css";
 import cardFrontImage from "../../images/bg-card-front.png";
 import { FC } from "react";
 
+// CardFrontProps interface
 export interface CardFrontProps {
   cardNumber: string;
   cardHolder: string;
